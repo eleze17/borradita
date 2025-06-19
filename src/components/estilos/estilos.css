@@ -8,16 +8,17 @@ text-align: center;
 border-radius: 5px;
 color: black;
 background-color:rgb(207, 193, 193);
-font-size:1rem;
+font-size:.8rem;
 font-weight:bold;}
 
 
 
 body{width: 100vw;
-    background-color: rgb(194, 188, 245);
-    padding-left: 1rem;
+    overflow:auto;
+   
 }
-.nombre{font-size: 10px;}
+.nombre{font-size: 10px;
+}
 
 @media (min-width: 400px) {
   .numbers {font-size:2rem;

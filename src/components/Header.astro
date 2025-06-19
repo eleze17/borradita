@@ -5,27 +5,43 @@ const { resultado } = Astro.props;
 ---
 
 <header>
-<h1>El juego es desde el lunes 16 al viernes 20 de Junio 2025.
+<h1>El juego es desde el lunes 16 al sabado 21 de Junio 2025.
     <span>
     Suerte a todos!
     </span>
 </h1>
-<h2> Los numeros que salieron:
-</h2>
+<h1> Los numeros que salieron:
+</h1>
  <p>{ resultado[0].numeros.join(';')}</p>
 </header>
 
 <style>
+h1{border-bottom: 2px solid rgb(7, 114, 4);
+text-shadow: 1px 2px 2px rgb(235, 43, 75);
+font-size: 1rem;}
+
 header{
   width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    color: rgb(12, 11, 11);
+    align-items: center;
+    color: rgb(248, 208, 208);
     gap: 1rem;
+    background-color: rgb(9, 68, 1);
 }
 p{font-weight: bold;
-font-size: medium;
-width: 100%;
+font-size: 1rem;
+width: 60%;
 word-break: break-word;}
+
+@media (min-width: 400px) {
+  p {
+    font-size: 2rem;
+  }
+  h1{font-size: 2rem;}
+}
+
+
+
 </style>
