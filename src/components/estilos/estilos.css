@@ -1,3 +1,8 @@
+*{margin: 0;
+padding: 0;}
+
+html{box-sizing: border-box;}
+
 .numbers{border: gray 2px solid;
 text-align: center;
 border-radius: 5px;
@@ -7,4 +12,8 @@ font-size:2rem;
 font-weight:bold;}
 
 
-body{background-color: rgb(194, 188, 245);}
+
+body{width: 100vw;
+    background-color: rgb(194, 188, 245);
+    padding-left: 1rem;
+}
