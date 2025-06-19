@@ -1,0 +1,36 @@
+---
+const { resultado } = Astro.props;
+
+
+---
+
+<header>
+<h1>El juego es desde el lunes 16 al viernes 20 de Junio 2025.
+    <span>
+    Suerte a todos!
+    </span>
+</h1>
+<h2> Los numeros que salieron:
+    <p>{resultado[0].numeros.join(';')}</p>
+</h2>
+
+</header>
+
+<style>
+.grid-inputs{display: grid;
+    width: 800px;
+grid-template-columns: repeat(4, 50px);
+grid-template-rows: repeat(5,50px);
+gap: 5px;}
+
+.grid-inputs div{display: flex;
+justify-content: space-around;}
+input{width: 100%;}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(12, 11, 11);
+}
+</style>

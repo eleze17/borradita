@@ -1,0 +1,35 @@
+---
+import type { load } from "cheerio";
+import Header from "./Header.astro"
+import {Jugadas} from "./Jugadas.jsx"
+import {datos} from '../funciones/basemongo.js';
+
+const {respuesta,resultado} = await datos()
+const jugadores = respuesta.length;
+---
+<Header resultado= {resultado} ></Header>
+<h1>Bienvenidos a la Borradita Vecinal</h1>
+<div class="parent" style={`--grid-rows: ${jugadores}`}>
+
+ {respuesta.map((item) => (
+ <Jugadas  nombre = {item.nombre} numeros = {item.numeros} resultado ={resultado[0].numeros} client:load ></Jugadas>
+))}
+
+
+</div>
+
+<style>
+  
+	.parent {
+    color: wheat;
+    display: grid;
+    grid-template-columns: 20% repeat(10, 1fr);
+	  grid-template-rows: repeat(var(--grid-rows), 1fr);
+    background-color: rgb(59, 59, 57);
+  
+}
+</style>
+
+
+
+

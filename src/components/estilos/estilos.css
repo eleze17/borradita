@@ -1,0 +1,10 @@
+.numbers{border: gray 2px solid;
+text-align: center;
+border-radius: 5px;
+color: black;
+background-color:rgb(207, 193, 193);
+font-size:2rem;
+font-weight:bold;}
+
+
+body{background-color: rgb(194, 188, 245);}
