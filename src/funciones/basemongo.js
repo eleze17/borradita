@@ -23,7 +23,7 @@ const jugadaSchema = new Schema({
   numeros: [Number]
 });
 const jugadas = mongoose.models.jugadas || mongoose.model('jugadas', jugadaSchema);
-let  respuesta = await jugadas.find({nombre: { $ne: 'RESULTADO'}})
+let  respuesta = await jugadas.find({nombre: { $not: /^RESULTADO/}})
 let  resultado = await jugadas.find({nombre: 'RESULTADO'})
 //const documentosCreados = await jugadas.create(resultados);
 

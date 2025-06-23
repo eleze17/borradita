@@ -1,20 +1,21 @@
 ---
 const { resultado } = Astro.props;
-
+import {Resultados} from "./Resultados.jsx" 
+import Vacante from "./Vacante.jsx"
 
 ---
 
-<header>
-<h1>El juego es desde el lunes 16 al sabado 21 de Junio 2025.
+  <header>
+  <!-- <Vacante/> -->
+<h1>El juego es desde el lunes 23 al viernes 27 de Junio 2025.
     <span>
     Suerte a todos!
     </span>
 </h1>
 <h1> Los numeros que salieron:
 </h1>
- <p>{ resultado[0].numeros.join(';')}</p>
+ <Resultados resultado= {resultado[0]?.numeros || []}> </Resultados>
 </header>
-
 <style>
 h1{border-bottom: 2px solid rgb(7, 114, 4);
 text-shadow: 1px 2px 2px rgb(235, 43, 75);

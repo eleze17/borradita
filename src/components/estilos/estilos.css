@@ -24,6 +24,22 @@ body{width: 100vw;
   .numbers {font-size:2rem;
    
   }
-  .nombre{font-size: 1rem;}
+  .nombre{font-size: .8rem;}
 }
 
+.item-resultados{
+   border: 2px solid #042c07;
+  border-radius: 2px;
+  text-align: center;
+  border-collapse: collapse;
+  height: 100%;
+}
+
+.dia{grid-row-start: span 2;
+text-align: center;
+height: 100%;
+border: 2px solid   #042c07;
+font-size: larger;
+font-weight: bold;
+
+}

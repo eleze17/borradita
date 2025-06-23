@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Números de Jugada</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+    <div class="form-container">
+        <h2>Actualizar Números de Jugada</h2>
+        <p>Edita los 20 números para la jugada.</p>
+
+        <form id="updateJugadaForm">
+            <input type="hidden" id="jugadaId" name="jugadaId" value="685357de1264199809d4e75d">
+            
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="numero1">Número 1:</label>
+                    <input type="number" id="numero1" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero2">Número 2:</label>
+                    <input type="number" id="numero2" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero3">Número 3:</label>
+                    <input type="number" id="numero3" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero4">Número 4:</label>
+                    <input type="number" id="numero4" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero5">Número 5:</label>
+                    <input type="number" id="numero5" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero6">Número 6:</label>
+                    <input type="number" id="numero6" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero7">Número 7:</label>
+                    <input type="number" id="numero7" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero8">Número 8:</label>
+                    <input type="number" id="numero8" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero9">Número 9:</label>
+                    <input type="number" id="numero9" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero10">Número 10:</label>
+                    <input type="number" id="numero10" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero11">Número 11:</label>
+                    <input type="number" id="numero11" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero12">Número 12:</label>
+                    <input type="number" id="numero12" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero13">Número 13:</label>
+                    <input type="number" id="numero13" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero14">Número 14:</label>
+                    <input type="number" id="numero14" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero15">Número 15:</label>
+                    <input type="number" id="numero15" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero16">Número 16:</label>
+                    <input type="number" id="numero16" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero17">Número 17:</label>
+                    <input type="number" id="numero17" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero18">Número 18:</label>
+                    <input type="number" id="numero18" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero19">Número 19:</label>
+                    <input type="number" id="numero19" name="numeros[]" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="numero20">Número 20:</label>
+                    <input type="number" id="numero20" name="numeros[]" value="0">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Actualizar Jugada</button>
+        </form>
+    </div>
+
+    <script src="../../funciones/scripts.js"></script> </body>
+</html> 
+
+<style>
+    /* Reset básico y box-sizing */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea arriba para evitar centrado vertical excesivo */
+    min-height: 100vh; /* Para ocupar toda la altura si el contenido es corto */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Ancho máximo para pantallas grandes */
+    width: 95%; /* Ocupa casi todo el ancho disponible */
+    margin: 20px auto; /* Centra y añade margen vertical */
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Grid para los campos de número */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* 2-4 columnas dependiendo del ancho */
+    gap: 15px; /* Espacio entre los campos */
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.form-group input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    -moz-appearance: textfield; /* Oculta flechas en Firefox */
+}
+
+/* Ocultar flechas en Chrome/Safari */
+.form-group input[type="number"]::-webkit-outer-spin-button,
+.form-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.form-group input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Botón de envío */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Media Queries para responsividad (ajuste fino) */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+    .form-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Más columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+    .form-container h2 {
+        font-size: 1.5em;
+    }
+    .submit-btn {
+        font-size: 1em;
+    }
+}
+</style>
