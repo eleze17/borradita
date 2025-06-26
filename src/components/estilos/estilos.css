@@ -1,5 +1,6 @@
 *{margin: 0;
-padding: 0;}
+padding: 0;
+box-sizing: border-box;}
 
 html{box-sizing: border-box;}
 
@@ -13,15 +14,15 @@ font-weight:bold;}
 
 
 
-body{width: 100vw;
-    overflow:auto;
+body{max-width: 1200px;
+background-color: rgb(9, 68, 1);
    
 }
 .nombre{font-size: 10px;
 }
 
 @media (min-width: 400px) {
-  .numbers {font-size:2rem;
+  .numbers {font-size:1.5rem;
    
   }
   .nombre{font-size: .8rem;}

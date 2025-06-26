@@ -22,7 +22,8 @@ const jugadores = respuesta.length;
   h1{text-align: center;
 font-size: 1rem;
 background-color: green;
-color:antiquewhite
+color:antiquewhite;
+margin-top: 5px;
 }
 	.parent {
     border-radius: 10px;
@@ -31,11 +32,12 @@ color:antiquewhite
     color: rgb(243, 196, 109);
     display: grid;
     grid-template-columns: 25% repeat(10, auto) ;
-	 grid-template-rows: repeat(var(--grid-rows), 30px);
+	  grid-template-rows: repeat(var(--grid-rows), 30px);
     background-color: rgb(3, 88, 10);
     text-align: center;
     text-wrap: wrap;
     align-items: center;
+    justify-content:stretch;
     
     
   
@@ -45,9 +47,10 @@ color:antiquewhite
 
 @media (min-width: 400px) {
   .parent {
+  width: 100%;
     grid-template-columns: 10% repeat(10, auto) ;
     grid-template-rows: repeat(var(--grid-rows), 1fr)
-    width:90%;
+   
   }
   h1{text-align: center;
     font-size: 2rem;
