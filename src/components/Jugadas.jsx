@@ -22,7 +22,7 @@ export  const Jugadas = ({nombre,numeros,resultado})=>{
   },[numeros]); 
     return(
         <>
-        <div className="nombre">{nombre}  Borrados: {numerosOk.length} </div>
+        <div className="nombre">{nombre}  <span>Borrados: {numerosOk.length}</span> </div>
         {numeros.map((numero,index)=>{
             return(<div className="numbers"key={index} id={numero.value}
             style={borrados.includes(index)?{color:'red'}:{}}

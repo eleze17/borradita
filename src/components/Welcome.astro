@@ -31,7 +31,7 @@ margin-top: 5px;
     width:100%;
     color: rgb(243, 196, 109);
     display: grid;
-    grid-template-columns: 25% repeat(10, auto) ;
+    grid-template-columns: 30% repeat(10, auto) ;
 	  grid-template-rows: repeat(var(--grid-rows), 30px);
     background-color: rgb(3, 88, 10);
     text-align: center;
@@ -40,16 +40,18 @@ margin-top: 5px;
     justify-content:stretch;
     
     
+    
   
 }
 
 
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .parent {
   width: 100%;
     grid-template-columns: 10% repeat(10, auto) ;
-    grid-template-rows: repeat(var(--grid-rows), 1fr)
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    gap:2px;
    
   }
   h1{text-align: center;

@@ -7,11 +7,12 @@ import Vacante from "./Vacante.jsx"
 
   <header>
   <!-- <Vacante/> -->
-<h1>El juego es desde el lunes 23 al viernes 27 de Junio 2025.
+<h1>El juego es desde el lunes 30 al viernes 4 de Julio 2025.
     <span>
     Suerte a todos!
     </span>
 </h1>
+<Vacante client:load />
 <h1> Los numeros que salieron:
 </h1>
  <Resultados resultado= {resultado[0]?.numeros || []}> </Resultados>
@@ -36,7 +37,7 @@ font-size: 1rem;
 width: 60%;
 word-break: break-word;}
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   p {
     font-size: 2rem;
   }

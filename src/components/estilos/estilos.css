@@ -18,7 +18,12 @@ body{max-width: 1200px;
 background-color: rgb(9, 68, 1);
    
 }
-.nombre{font-size: 10px;
+.nombre{font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  font-size: .6rem;
+  
 }
 
 @media (min-width: 400px) {
@@ -44,3 +49,24 @@ font-size: larger;
 font-weight: bold;
 
 }
+
+.Vacante {
+  margin-top: 50px;
+        display: flex;
+        height: 100px;
+        width: 300px;
+        color:white;
+        justify-content: center;
+        align-items: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        background: rgb(238, 210, 219);
+        box-shadow: 10px 5px 5px rgb(2, 80, 21),
+        20px -10px 1px rgb(242, 248, 188),
+        30px -16px 5px rgb(3, 175, 46);
+        display:none;
+        
+      
+}
+img{width: 100%;
+height: 100%;}
